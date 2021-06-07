@@ -1,0 +1,204 @@
+
+.navsup {
+  background-color: rgba(0, 0, 0, 0.863);
+  color: rgb(255, 255, 255);
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#titulo{
+  font-size: 22px;
+  background: rgba(0, 0, 0, 0.863);
+  border-radius: 6px;
+}
+#titulo:hover,
+#titulo.active,
+#titulo.focus{
+  color: rgba(0, 9, 61, 0.863);
+  background: azure;
+  
+
+}
+.listsup {
+  padding: 15px;
+  margin: 20px;
+}
+
+
+.main {
+
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.title a {
+  color: rgb(0, 238, 255);
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  color:rgba(0, 0, 0, 0.863);
+  text-decoration: underline;
+}
+
+.title {
+  color: rgba(0, 0, 0, 0.863);
+  line-height: 1.15;
+  font-size: 40px;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin-top: 20px;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  color: rgba(0, 0, 2, 0.863);
+  background: rgba(0, 238, 255, 0.116);
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+.code:hover,
+.code:focus,
+.code:active {
+  color: rgba(0, 0, 0, 0.863);
+  border-color:rgba(0, 0, 0, 0.863);
+}
+
+
+.card {
+  
+  background-color: rgba(0, 0, 0, 0.863);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border: 1px solid rgb(0, 238, 255);
+  border-radius: 10px;
+  transition: color 0.95s ease, border-color 0.95s ease;
+  width: 100vh;
+  height: 11vh;
+  position: relative;
+  padding: 6px;
+  transition: height 2s;
+}
+.card:hover,
+.card:focus,
+.card:active {
+  background-color: rgb(100, 100, 100);
+  border-color: rgba(0, 0, 0, 0.863);
+  height: 36vh;
+  transition: height 2s;
+
+}
+.icons{
+  color: rgb(250, 255, 219);
+}
+.icons:hover,
+.icons:focus,
+.icons:active{
+  background-color: aliceblue;
+}
+.card:hover h3 {
+  display: block;
+  transition: height 2s;
+}
+.card:hover h4 {
+  display: block;
+  transition: height 2s;
+}
+.card:hover p {
+  transition: height 2s;
+  display: block;
+}
+.card h2 {
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.863);
+  text-align: center;
+  border-radius: 5px;
+  background-color:rgb(2, 23, 82);
+  padding: 15px;
+}
+.card h3 {
+  color: rgb(2, 23, 82);
+  display: none;
+  text-align: center;
+  border-radius: 10px;
+  background-color:rgb(241, 241, 241);
+  padding: 15px;
+  margin: 30px;
+}
+
+.card h4 {
+  color: rgb(2, 23, 82);
+  display: none;
+  text-align: center;
+  border-radius: 10px;
+  background-color:rgb(255, 255, 255);
+  padding: 10px;
+  margin:36px;
+}
+
+.card p {
+  display: none;
+  margin: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.logo {
+  background-color: rgb(0, 238, 255);
+  height: 1.8em;
+  margin-left: 0.5rem;
+  border-radius: 40px;
+}
+.footer {
+  font-size: 20px;
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.877);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.footer a {
+  
+  color: rgba(255, 255, 255, 0.863);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+
+.footer a:hover,
+.footer a:focus,
+.footer a:active {
+  color: rgba(0, 0, 0, 0.863);
+  border-color:rgba(0, 0, 0, 0.863);
+}
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
