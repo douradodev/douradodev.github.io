@@ -24,5 +24,16 @@
     "@types/node": "^15.0.1",
     "@types/react": "^17.0.4",
     "typescript": "^4.2.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douradodev/Portfolio.git"
+  },
+  "author": "Douradodev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/douradodev/Portfolio/issues"
+  },
+  "homepage": "https://github.com/douradodev/Portfolio#readme",
+  "description": ""
 }
