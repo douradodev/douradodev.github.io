@@ -7,6 +7,7 @@ import {faAndroid, faApple, fab, faConnectdevelop, faFacebook, faGithub, faGithu
 import { faAddressBook, faBook, faBookReader, faGraduationCap, faHistory, faInfo, faInfoCircle, faLaptopCode, faLifeRing, faPassport } from '@fortawesome/free-solid-svg-icons';
 import image from 'next/image';
 library.add(fab)
+
 export default function Home() {
   return (
     <div className = {styles.container}>
