@@ -56,7 +56,7 @@ export default function Home() {
         </div>
       </nav>
       <div className="container" >
-        <div className={styles.containe}>
+        <div>
           <main className={styles.main}>
             <h1 className={styles.title}>
               Olá, eu me chamo Victor Dourado!
@@ -65,8 +65,7 @@ export default function Home() {
               <code className={styles.code}>
                 Atualmente curso Análise e Desenvolvimento de Sistemas no Instituto Federal Do Piauí e estudo desenvolvimento WEB, este site tem como objetivo servir de portfólio para mim e ele foi feito utilizando <span className={styles.evidencia}>Next.JS, juntamente com as tecnologias React, Javascript, HTML5, CSS3 e Bootstrap</span></code>
             </p>
-            <div className={styles.grid}>
-
+            <div className= {styles.group}>
               <div className={styles.card}>
                 <h2>Meus Projetos<FontAwesomeIcon className= {styles.icons} icon={faApple} height='25px' /> &darr;</h2>
                 <h3> Aqui irei apresentar os links dos meus principais sistemas/sites. </h3>
@@ -131,7 +130,7 @@ export default function Home() {
             &copy; VictorDourado
           </footer>
         </div>
-            </div>
       </div>
+    </div>
   )
 }

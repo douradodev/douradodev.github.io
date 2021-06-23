@@ -29,7 +29,6 @@
 
 
 .main {
-
   padding: 5rem 0;
   flex: 1;
   display: flex;
@@ -58,6 +57,10 @@
   color: rgb(255, 255, 255);
   position:relative;
   right: 380px;
+}
+
+.group{
+
 }
 
 .title {
@@ -227,6 +230,12 @@
     width: 100%;
   }
   .container {
+    width: 100%;
+  }
+  .main {
+    width: 100%;
+  }
+  .group {
     width: 100%;
   }
 }
