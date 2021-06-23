@@ -12,11 +12,12 @@ export default function Home() {
   return (
     <div className = {styles.container}>
       <Head>
-        <title>Sistema Dourado</title>
+        <title>Victor Dourado</title>
         <meta name="Icon PORTFOLIO" content="Victor DEV" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.navsup}>
+        <p className= {styles.alert}>Essa página está em desenvolvimento!</p>
         <ul className={styles.listsup}>
           <a className={styles.icons} href="https://github.com/douradodev" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} width='1.5rem' />
@@ -34,20 +35,20 @@ export default function Home() {
       </div>
       <nav className="navbar navbar-expand-lg navbar-light " >
         <div className="container">
-          <a id={styles.titulo} href="#">SistemaDourado</a>
+          <a id={styles.titulo} href="#">VictorDourado</a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto" id="navitens">
               <li className="nav-item active" >
-                <a  href="#">Início <span className="sr-only" ></span></a>
+                <a  href="#">Home <span className="sr-only" ></span></a>
               </li>
               <li className="nav-item">
-                <a  href="#">Link</a>
+                <a  href="https://github.com/douradodev">GitHub</a>
               </li>
               <li className="nav-item dropdown">
-                <a className="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a className="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
                   Mais
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -75,33 +76,69 @@ export default function Home() {
                 Atualmente curso Análise e Desenvolvimento de Sistemas no Instituto Federal Do Piauí e estudo desenvolvimento WEB, este site tem como objetivo servir de portfólio para mim e ele foi feito utilizando <span className={styles.evidencia}>Next.JS, juntamente com as tecnologias React, Javascript, HTML5, CSS3 e Bootstrap</span></code>
             </p>
             <div className={styles.grid}>
+
               <div className={styles.card}>
-                <h2>Aplicações <FontAwesomeIcon className= {styles.icons} icon={faApple} height='25px' /> &darr;</h2>
-                <p>Aqui irei apresentar meus principais programas e disponibilizar os repositórios dos mesmos no GitHub </p>
+                <h2>Meus Projetos<FontAwesomeIcon className= {styles.icons} icon={faApple} height='25px' /> &darr;</h2>
+                <h3> Aqui irei apresentar os links dos meus principais sistemas/sites. </h3>
+                <ul>
+                  <li className = {styles.site}>
+                    <a href="https://schoolbagtep.herokuapp.com/#" target="blank"> Equipe SchoolBag </a>
+                    <p>(Site acadêmico desenvolvido em Django por mim e pelo Antônio Henrique  para a disciplina de Tópicos especiais de Programação, onde o nosso objetivo era desenvolver um game)</p>
+                  </li>
+
+                  <li className = {styles.site}>
+                    <a href="https://random-quote-machine-six.vercel.app/" target="blank"> Máquina de citações aleatórias </a>
+                    <p>(Projeto 1/5 para conclusão do curso de Bibliotecas front-end da plataforma FreeCodeCamp)</p>
+                  </li>
+                </ul>
               </div>
+
               <div className={styles.card}>
                 <h2>Experiencias <FontAwesomeIcon className= {styles.icons} icon={faHistory} height='25px' /> &darr;</h2>
-                <p>Aqui irei falar um pouco sobre minha vida profissional</p>
+                <h3>Aqui irei falar um pouco sobre minhas experiências profissionais</h3>
+                <p className = {styles.site}>
+                  <a href="https://www.eb.mil.br/" target="blank">- Exército Brasileiro</a> (15/02/20 - 05/10/20)  
+                    Cargo: Aluno/Aspirante a oficial  
+                    Atividades: Trabalhos de logística, controle de pessoal e material, elaboração de relatórios e planilhas. 
+                </p>
+                <p className = {styles.site}>
+                  <a href="https://www.gferronorte.com.br/" target="blank">- Ferronorte</a> (17/05/2021 - Atualmente)
+                    Cargo: Auxiliar de produção
+                    Atividades: Trabalhos de organização e limpeza de setor, preparo de lotes de produto (tubos de ferro), auxílio no manuseio de máquinas e trabalho braçal.
+                </p>
               </div>
+
               <div className={styles.card}>
                 <h2>Tecnologias utilizadas <FontAwesomeIcon className= {styles.icons} icon={faReact} height='25px' /> &darr;</h2>
-                <p>Habilidades e tecnologias que já utilizei e atualmente faço uso na construção dos sistemas e aplicações</p>
+                <h3>Habilidades e tecnologias utilizo na construção de sistemas e sites</h3>
+                <h4>• Desenvolvedor WEB (Angular.js, React.js, Next.js).</h4>
+                <h4>• Programo em JavaScript e Python 👨‍💻</h4>
               </div>
+
               <div className={styles.card}>
                 <h2>Formação acadêmica <FontAwesomeIcon className= {styles.icons} icon={faGraduationCap} height='25px' /> &darr;</h2>
-                <h3>Graduação tecnológica(incompleto) </h3>
+                <h3> Cursando Graduação tecnológica </h3>
                 <h4> &rarr; Análise e Desenvolvimento de Sistemas <FontAwesomeIcon icon={faLaptopCode} height='25px' /> </h4>
               </div>
+
               <div className={styles.card}>
                 <h2>Sobre <FontAwesomeIcon className= {styles.icons} icon={faAddressBook} height='25px' /> &darr;</h2>
-                <p>   Tenho 19 anos e ultimamente tenho estudado as tecnologias que utilizei pra fazer este site, meu objetivo é obter habilidades notáveis em Next.JS e minha próxima meta é aprender conhecimentos sobre TypeScript. Também preciso obter habilidades para integrar as frontpages a APIS e a manipular bancos de dados, em breve estudarei disciplinas relacionadas a esses conhecimentos no curso de ADS no IFPI.
-                </p>
-                <p> Atualmente realizo trabalhos de construção de páginas ou estilização das mesmas, porém trabalho apenas com front-pages no momento.</p>
+                <div className = {styles.site}>
+                  <p>• Tenho 20 anos de idade, sou um programador iniciante adquirindo conhecimentos e habilidades na área de desenvolvimento WEB, atualmente estou aprendendo Angular.JS e meu foco atual é o Front-end, porém meu objetivo a médio prazo é me tornar um Desenvolvedor FullStack.</p>
+                  
+                  <p> • Considero relevantes para o meu desenvolvimento profissional e pessoal:
+                      <li>➡️ - Autodisciplina</li>
+                      <li>➡️ - Organização</li>
+                      <li>➡️ - Aprendizado constante</li>
+                  </p>
+                  <p>• Atualmente não me prendo a área de TI, devido a necessidade de trabalhar estou aprendendo e absorvendo experiência profissional trabalhando em diversos segmentos enquanto procuro oportunidades de crescer em minha área. 💼
+                  </p>
+                </div>
               </div>
             </div>
           </main>
           <footer className={styles.footer}>
-            &copy; SistemaDourado
+            &copy; VictorDourado
           </footer>
         </div>
             </div>

@@ -4,7 +4,7 @@ body {
   padding: 0;
   margin: 0;
   font-family:Helvetica;
-  background-image: url(backgroun.jpg);
+  background-color: rgb(170, 240, 252);
 }
 a {
   padding: inherit;
@@ -50,7 +50,7 @@ nav li:active{
 nav a:hover,
 nav a:focus,
 nav a:active{
-  color: rgb(2, 23, 82);
+  color: rgb(2, 66, 82);
   border: 1px solid #00ff0d00;
 }
 
