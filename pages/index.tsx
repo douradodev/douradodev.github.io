@@ -47,17 +47,7 @@ export default function Home() {
               <li className="nav-item">
                 <a  href="https://github.com/douradodev">GitHub</a>
               </li>
-              <li className="nav-item dropdown">
-                <a className="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-                  Mais
-                </a>
-                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="#">Ir para</a>
-                  <a className="dropdown-item" href="#">WebSite</a>
-                  <div className="dropdown-divider"></div>
-                  <a className="dropdown-item" href="#">Youtube</a>
-                </div>
-              </li>
+              
               <li className="nav-item">
                 <a  href="#">Sobre</a>
               </li>

@@ -221,3 +221,27 @@
   color: rgba(0, 0, 0, 0.863);
   border-color:rgba(0, 0, 0, 0.863);
 }
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .navsup {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+  .navsup {
+    width: 100%;
+  }
+  .navsup {
+    width: 100%;
+  }
+  .navsup {
+    width: 100%;
+  }
+  .navsup {
+    width: 100%;
+  }
+  .navsup {
+    width: 100%;
+  }
+}
