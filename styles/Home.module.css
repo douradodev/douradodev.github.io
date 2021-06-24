@@ -30,7 +30,7 @@
 
 .main {
   padding: 5rem 0;
-  flex: 1;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,7 +60,11 @@
 }
 
 .group{
-
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
@@ -104,10 +108,10 @@
   border: 1px solid rgb(0, 238, 255);
   border-radius: 10px;
   transition: background-color 0.95s ease, border-color 0.95s ease, height 1s;
-  width: 100vh;
   height: 13vh;
   position: relative;
   padding: 6px;
+  width: 100%;
 }
 .card:hover,
 .card:focus,
@@ -141,7 +145,7 @@
 }
 .card:hover p {
   display: block ;
-  transition-delay: 2s;
+  
 }
 .card:hover ul {
   display: block ;

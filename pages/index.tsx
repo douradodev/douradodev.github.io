@@ -58,13 +58,15 @@ export default function Home() {
       <div className="container" >
         <div>
           <main className={styles.main}>
-            <h1 className={styles.title}>
-              Olá, eu me chamo Victor Dourado!
-            </h1>
-            <p className={styles.description}>
-              <code className={styles.code}>
-                Atualmente curso Análise e Desenvolvimento de Sistemas no Instituto Federal Do Piauí e estudo desenvolvimento WEB, este site tem como objetivo servir de portfólio para mim e ele foi feito utilizando <span className={styles.evidencia}>Next.JS, juntamente com as tecnologias React, Javascript, HTML5, CSS3 e Bootstrap</span></code>
-            </p>
+            <div >
+              <h1 className={styles.title}>
+                Olá, eu me chamo Victor Dourado!
+              </h1>
+              <p className={styles.description}>
+                <code className={styles.code}>
+                  Atualmente curso Análise e Desenvolvimento de Sistemas no Instituto Federal Do Piauí e estudo desenvolvimento WEB, este site tem como objetivo servir de portfólio para mim e ele foi feito utilizando <span className={styles.evidencia}>Next.JS, juntamente com as tecnologias React, Javascript, HTML5, CSS3 e Bootstrap</span></code>
+              </p>
+            </div>
             <div className= {styles.group}>
               <div className={styles.card}>
                 <h2>Meus Projetos<FontAwesomeIcon className= {styles.icons} icon={faApple} height='25px' /> &darr;</h2>
