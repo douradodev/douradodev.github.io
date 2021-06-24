@@ -7,8 +7,7 @@ import {faAndroid, faApple, fab, faConnectdevelop, faFacebook, faGithub, faGithu
 import { faAddressBook, faBook, faBookReader, faGraduationCap, faHistory, faInfo, faInfoCircle, faLaptopCode, faLifeRing, faPassport } from '@fortawesome/free-solid-svg-icons';
 import image from 'next/image';
 library.add(fab)
-
-export default function Home() {
+export default function Home() { 
   return (
     <div className = {styles.container}>
       <Head>
@@ -16,6 +15,7 @@ export default function Home() {
         <meta name="Icon PORTFOLIO" content="Victor DEV" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
       <div className={styles.navsup}>
         <p className= {styles.alert}>Essa página está em desenvolvimento!</p>
         <ul className={styles.listsup}>
@@ -136,3 +136,4 @@ export default function Home() {
     </div>
   )
 }
+
