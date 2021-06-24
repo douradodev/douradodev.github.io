@@ -45,7 +45,7 @@ export default function Home() {
                 <a  href="#">Home <span className="sr-only" ></span></a>
               </li>
               <li className="nav-item">
-                <a  href="https://github.com/douradodev">GitHub</a>
+                <a  href="https://github.com/douradodev" target="blank">GitHub</a>
               </li>
               
               <li className="nav-item">
