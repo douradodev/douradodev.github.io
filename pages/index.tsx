@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faAndroid, faApple, fab, faConnectdevelop, faFacebook, faGithub, faGithubAlt, faGithubSquare, faInstagram, faLinkedin, faReact} from '@fortawesome/free-brands-svg-icons'
 import { faAddressBook, faBook, faBookReader, faGraduationCap, faHistory, faInfo, faInfoCircle, faLaptopCode, faLifeRing, faPassport } from '@fortawesome/free-solid-svg-icons';
 library.add(fab);
-import minhatela from '../public/minhatela.jpeg'
 
 
 export default function Home() { 
