@@ -5,8 +5,10 @@ import styles from '../styles/Home.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faAndroid, faApple, fab, faConnectdevelop, faFacebook, faGithub, faGithubAlt, faGithubSquare, faInstagram, faLinkedin, faReact} from '@fortawesome/free-brands-svg-icons'
 import { faAddressBook, faBook, faBookReader, faGraduationCap, faHistory, faInfo, faInfoCircle, faLaptopCode, faLifeRing, faPassport } from '@fortawesome/free-solid-svg-icons';
-import image from 'next/image';
-library.add(fab)
+library.add(fab);
+import minhatela from '../public/minhatela.jpeg'
+
+
 export default function Home() { 
   return (
     <div className = {styles.container}>
@@ -14,8 +16,8 @@ export default function Home() {
         <title>Victor Dourado</title>
         <meta name="Icon PORTFOLIO" content="Victor DEV" />
         <link rel="icon" href="/favicon.ico" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       </Head>
-      
       <div className={styles.navsup}>
         <p className= {styles.alert}>Essa página está em desenvolvimento!</p>
         <ul className={styles.listsup}>
@@ -58,6 +60,9 @@ export default function Home() {
       <div className="container" >
         <div>
           <main className={styles.main}>
+            <div className={styles.myx}>
+              <Image className= {styles.my} src="/minhatela.jpeg" width="200px" height="200px"/>
+            </div>
             <div >
               <h1 className={styles.title}>
                 Olá, eu me chamo Victor Dourado!
@@ -74,29 +79,39 @@ export default function Home() {
                 <ul>
                   <li className = {styles.site}>
                     <a href="https://schoolbagtep.herokuapp.com/#" target="blank"> Equipe SchoolBag </a>
-                    <p>(Site acadêmico desenvolvido em Django por mim e pelo Antônio Henrique  para a disciplina de Tópicos especiais de Programação, onde o nosso objetivo era desenvolver um game)</p>
+                    <p>(Site acadêmico desenvolvido em Django por mim e pelo <a href="http://ahslcdev.herokuapp.com/" target="blank">Antônio Henrique</a>  para a disciplina de Tópicos especiais de Programação, onde o nosso objetivo era desenvolver um game)</p>
                   </li>
 
                   <li className = {styles.site}>
                     <a href="https://random-quote-machine-six.vercel.app/" target="blank"> Máquina de citações aleatórias </a>
                     <p>(Projeto 1/5 para conclusão do curso de Bibliotecas front-end da plataforma FreeCodeCamp)</p>
                   </li>
+
+                  <li className = {styles.site}>
+                    <a href="https://douradodev.vercel.app/" target="blank"> Meu Portfólio </a>
+                    <p>(Esse é o link do meu portfólio, site desenvolvido por mim para mostrar meus projetos)</p>
+                  </li>
+
                 </ul>
               </div>
 
               <div className={styles.card}>
                 <h2>Experiencias <FontAwesomeIcon className= {styles.icons} icon={faHistory} height='25px' /> &darr;</h2>
                 <h3>Aqui irei falar um pouco sobre minhas experiências profissionais</h3>
-                <p className = {styles.site}>
-                  <a href="https://www.eb.mil.br/" target="blank">- Exército Brasileiro</a> (15/02/20 - 05/10/20)  
-                    Cargo: Aluno/Aspirante a oficial  
-                    Atividades: Trabalhos de logística, controle de pessoal e material, elaboração de relatórios e planilhas. 
-                </p>
-                <p className = {styles.site}>
-                  <a href="https://www.gferronorte.com.br/" target="blank">- Ferronorte</a> (17/05/2021 - Atualmente)
-                    Cargo: Auxiliar de produção
-                    Atividades: Trabalhos de organização e limpeza de setor, preparo de lotes de produto (tubos de ferro), auxílio no manuseio de máquinas e trabalho braçal.
-                </p>
+                <div className = {styles.site}>
+                  <p >
+                    <a href="https://www.eb.mil.br/" target="blank">- Exército Brasileiro</a> (15/02/20 - 05/10/20)
+                      Cargo: Aluno/Aspirante a oficial
+                  </p>
+                  <p>Atividades: Desempenhei funções que forjam o atributo de Liderança, também tive contato com controle de material, elaboração de relatórios e planilhas.</p>
+                </div>
+                <div className = {styles.site}>
+                  <p >
+                    <a href="https://www.gferronorte.com.br/" target="blank">- Ferronorte</a> (17/05/2021 - 20/06/2021)
+                      Cargo: Auxiliar de produção
+                  </p>
+                  <p>Atividades: Trabalhos de organização e limpeza de setor, preparo de lotes de produto (tubos de ferro), auxílio no manuseio de máquinas e trabalho braçal.</p>
+                </div>
               </div>
 
               <div className={styles.card}>
@@ -104,6 +119,7 @@ export default function Home() {
                 <h3>Habilidades e tecnologias utilizo na construção de sistemas e sites</h3>
                 <h4>• Desenvolvedor WEB (Angular.js, React.js, Next.js).</h4>
                 <h4>• Programo em JavaScript e Python 👨‍💻</h4>
+                
               </div>
 
               <div className={styles.card}>
@@ -136,4 +152,3 @@ export default function Home() {
     </div>
   )
 }
-
